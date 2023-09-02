@@ -8,21 +8,28 @@
         body{
             background-color: #160331;
             margin: 0;
-         
         }
         header {
-        background-image: url('./header.png');
-        height: 300px; /* Altura do cabeçalho (ajuste conforme necessário) */
-        color: #fff; /* Cor do texto no cabeçalho */
-        text-align: center; /* Alinhar o texto ao centro */
-        padding: 150px; /* Espaçamento interno do cabeçalho */
-       }
+            background-image: url('./header.png');
+            height: 300px; /* Altura do cabeçalho (ajuste conforme necessário) */
+            color: #fff; /* Cor do texto no cabeçalho */
+            padding: 150px; /* Espaçamento interno do cabeçalho */
+            text-align: center;
+        }
        #sobreMim{
-        width: 50%;
-       }
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
        #sobreMim img{
-        width: 50%;
+        width: 20rem;
        }
+       #sobreMim .abot{
+        /*Espaçamento interno, ou seja, dentro de sobre mim*/
+        padding-left: 50px;
+        padding-top: 80px;
+       }
+
+       /*Mudança para modo mobile ou tablet*/
 
 
     </style>
@@ -30,12 +37,16 @@
 <body>
     <header>
         <div id="sobreMim">
-             <img src="./eu.png">
+            <div class="abot"> 
+                <h1 class="sobre">Julia Nascimento Ritter</h1>
+                <p class="sobre">Desenvolvedora FullStack. </p>
+            </div>
+            <img src="./eu.png">
         </div>
     </header>
-    <div id="conteudo">
-        <h1>Bom dia a todos</h1>
-    </div>
+        <div id="conteudo">
+            <h1>Bom dia a todos</h1>
+        </div>
     <footer>
     </footer>
 </body>
