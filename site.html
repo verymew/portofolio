@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ju hub</title>
     <style>
         body{
             background-color: #160331;
             margin: 0;
         }
-        header {
+        #superior {
             background-image: url(./header.png);
             height: 561px;
             color: #fff;
@@ -35,6 +35,38 @@
         #mewi{
             width: 10rem;
         }
+        .conteudo{
+            text-align: center;
+        }
+        .conteudo h1{
+            font-size: 40px;
+            color: white;
+            font-family: monospace;
+            text-shadow: 3px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+        .conteudo p{
+            font-size: 20px;
+            margin: auto;
+            width: 35%;
+            color: white;
+            letter-spacing: 1px;
+        }
+        #meio{
+            text-align: center;
+        }
+
+        h1{
+
+        }
+        #grid-tecnologia{
+
+        }
+        .tecnologia{
+            display: grid;
+        }
+        .conteudo-tecnologia{
+         
+        }
 
        /*Mudança para modo mobile ou tablet*/
 
@@ -43,6 +75,8 @@
 </head>
 <body>
     <header>
+    </header>
+    <section id="superior">
         <div id="sobreMim">
             <div class="abot"> 
                 <h1 class="sobre">Julia Nascimento Ritter</h1>
@@ -51,10 +85,28 @@
             </div>
             <img src="./eu.png" id="eufeia">
         </div>
-    </header>
-        <div id="conteudo">
-            <h1>Bom dia a todos</h1>
+    </section>
+    <section id="meio">
+        <div class="conteudo">
+            <h1>Sobre mim</h1>
+            <p>Hey!<br> 
+                Sou uma estudante universitária em Sistemas de Informação buscando construir minha carreira como uma desenvolvedora FullStack. 
+                Tenho afinidade com Node.js, Java, consumo de APIs REST, além de desenvolver interfaces usando JavaFx e Java Swing. 
+                Possuo interesse na área de redes de computadores.
+            </p>
         </div>
+        <div class="conteudo" id="grid-tecnologia">
+            <h1>Projetos</h1>
+            <div class="tecnologia">
+                <div class="conteudo-tecnologia">
+                    <p>dsaodksodskdskdoskdodkodkodkodskdoskdoaskdoadkoasdospdksaodsoapdkp</p>
+                </div>
+                <div class="conteudo-tecnologia">
+                    <p>dskdsoadspodospdkwodwdksaodpskopdksaopdksadoksafdsafsafasfaf</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
     </footer>
 </body>
