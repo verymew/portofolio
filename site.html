@@ -9,6 +9,10 @@
             background-color: #160331;
             margin: 0;
         }
+        /*
+        ================================PARTE SUPERIOR==================================
+        =================================================================================
+        */
         #superior {
             background-image: url(./header.png);
             height: 561px;
@@ -61,12 +65,9 @@
             color: white;
             letter-spacing: 1px;
         }
-        #conteudo-tech{
-
-        }
         /*
-        *=======================Seção 2===========================
-        ====================Boxes = projetos ========================
+        *=======================Seção 2==================================================
+        ====================Boxes = projetos ============================================
         *
         */
         .tech-box{
@@ -105,8 +106,8 @@
             margin: 4rem;
         }
         /*
-        * =============== MENU ========================
-        * =============================================
+        * =============== MENU ================================================
+        * =====================================================================
         */
         /*botoes do menu*/
         li{
@@ -138,7 +139,36 @@
             border-color: white;
         }
         
-       /*Mudança para modo mobile ou tablet*/
+       /*
+       ======================Mudança para modo mobile ou tablet=========================
+       =================================================================================
+       */
+       @media screen and (max-width: 768px){
+            .box{
+                width: 250px;
+                margin: 20px 70px;
+                
+            }
+            .tech-box{
+                display: grid;
+            }
+            #sobreMim{
+                display: inline-flex;
+                flex-direction: column-reverse;
+                padding-right: 0;
+                align-items: center;
+            }
+            #eufeia{
+                width: 100px;
+            }
+            #sobreMim .abot{
+                padding-top: 0px;
+                padding-right: 50px;
+            }
+            .conteudo p{
+                width: 75%;
+            }
+       }
 
 
     </style>
