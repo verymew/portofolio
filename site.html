@@ -64,11 +64,17 @@
         #conteudo-tech{
 
         }
-          /*---------------Conteudo 2 -----------------------------------*/
+        /*
+        *=======================Seção 2===========================
+        ====================Boxes = projetos ========================
+        *
+        */
         .tech-box{
             display: flex;
             margin: auto;
-            width: 900px;
+            /*Isso fará com que vire uma row centralizada*/
+            flex-direction: row;
+            justify-content: center;
         }
         .tech-box img{
             width: 10rem;
@@ -84,6 +90,7 @@
             padding: 20px;
             border-radius: 20px;
             background: linear-gradient(to bottom, #0e0021, #10031c);
+            /*Largura maxima das boxes*/
             width: 20rem;
         }
         .conteudo2 h1{
@@ -119,11 +126,16 @@
         li a{
             text-decoration: none;
             color: white;
-            
+            padding-bottom: 2px; /* Espaçamento inferior para criar a borda */
+            border-bottom: 2px solid transparent; /* Crie uma borda inferior transparente */
+            transition: border-color 0.3s ease; /* Efeito de transição suave para a borda */
         }
-        li a img{
+        li a img{   
             position: relative;
             top: 7px;
+        }
+        li a:hover{
+            border-color: white;
         }
         
        /*Mudança para modo mobile ou tablet*/
