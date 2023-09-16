@@ -20,6 +20,7 @@
        #sobreMim{
             display: inline-flex;
             flex-direction: row-reverse;
+            padding-right: 65px;
         }
        #sobreMim .abot{
         /*Espaçamento interno, ou seja, dentro de sobre mim*/
@@ -83,10 +84,7 @@
             padding: 20px;
             border-radius: 20px;
             background: linear-gradient(to bottom, #0e0021, #10031c);
-
-        }
-        .box p{
-
+            width: 20rem;
         }
         .conteudo2 h1{
             font-size: 40px;
@@ -99,7 +97,35 @@
             text-align: center;
             margin: 4rem;
         }
-
+        /*
+        * =============== MENU ========================
+        * =============================================
+        */
+        /*botoes do menu*/
+        li{
+            display: inline;
+            margin: 20px;
+            font-size: 30px;
+            font-family: monospace;
+        }
+        /*Interface do menu*/
+        ul{
+            text-align: center;
+            margin: auto;
+            background-color: #10053e;
+            padding-top: 10px;
+        }
+        /*Li a = letras do botão, imagem do botao*/
+        li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        li a img{
+            position: relative;
+            top: 7px;
+        }
+        
        /*Mudança para modo mobile ou tablet*/
 
 
@@ -107,6 +133,23 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="youtube.com">
+                        Linkedin
+                        <img src="./linkd.png">
+                    </a>
+                </a>
+                </li>
+                <li>
+                    <a href="youtube.com">
+                        Github
+                        <img src="./github.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section id="superior">
         <div id="sobreMim">
@@ -131,20 +174,20 @@
             <h1>Projetos</h1>
             <div class="tech-box">
                 <div class="box">
-                    <p>Sistema para admnistração de uma clínica odontológica<br>
-                        Esse sistema foi produzido através do Java, utilizando também<br>
-                        o JavaFX para a criação de uma interface mais agradável<br>
+                    <p>Sistema para admnistração de uma clínica odontológica
+                        Esse sistema foi produzido através do Java, utilizando também
+                        o JavaFX para a criação de uma interface mais agradável
                         e funcional.
                     </p>
                     <img src="./javi.png">
                 </div>
                 <div class="box">
-                    <p>Sistema para admnistração de uma clínica odontológica<br>
-                        Esse sistema foi produzido através do Java, utilizando também<br>
-                        o JavaFX para a criação de uma interface mais agradável<br>
-                        e funcional.
+                    <p>Um blog com sistema de postagens
+                        O blog foi produzido usando o Node.js e suas bibliotecas, como o express e o handlebars,
+                        usado para a melhor organização dos arquivos estáticos (css). Além disso, foi utilizado
+                        uma conexão com o banco de dados MYSQL, usando o Sequelize para a realização do CRUD. 
                     </p>
-                    <img src="./javi.png">
+                    <img src="./node.png">
                 </div>
             </div>
         </div>
