@@ -1,0 +1,208 @@
+body{
+    background-color: #160331;
+    margin: 0;
+}
+/*
+================================PARTE SUPERIOR==================================
+=================================================================================
+*/
+#superior {
+    background-image: url(./header.png);
+    height: 561px;
+    color: #fff;
+    padding-top: 73px;
+    /* padding: 150px; */
+    text-align: center;
+}
+#sobreMim{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding-right: 65px;
+}
+#sobreMim .abot{
+/*Espaçamento interno, ou seja, dentro de sobre mim*/
+    padding-left: 50px;
+    padding-top: 80px;
+    font-size: 20px;
+    font-family: monospace;
+    text-shadow: 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#eufeia{
+    width: 20rem;
+}
+#mewi{
+    width: 10rem;
+}
+.conteudo{
+    text-align: center;
+    margin: 4rem;
+}
+.conteudo h1{
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+    text-shadow: 3px 5px 0px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+}
+.conteudo p{
+    font-size: 20px;
+    margin: auto;
+    width: 35%;
+    color: white;
+    letter-spacing: 1px;
+}
+.conteudo-tecnologia p{
+    font-size: 20px;
+    margin: auto;
+    width: 35%;
+    color: white;
+    letter-spacing: 1px;
+}
+/*
+*=======================Seção 2==================================================
+====================Boxes = projetos ============================================
+*
+*/
+.tech-box{
+    display: flex;
+    margin: auto;
+    /*Isso fará com que vire uma row centralizada*/
+    flex-direction: row;
+    justify-content: center;
+}
+.tech-box img{
+    width: 10rem;
+}
+/*Box:
+   São os quadrados onde ficam os projetos um do lado do outro. 
+*/
+.box{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0 70px; /*Desse jeito, o lado direito e esquerdo mudam de formas iguais, e a altura n*/
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #0e0021, #10031c);
+    /*Largura maxima das boxes*/
+    width: 20rem;
+}
+.conteudo2 h1{
+    font-size: 40px;
+    color: white;
+    font-family: monospace;
+    text-shadow: 3px 5px 0px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+}
+.conteudo2{
+    text-align: center;
+    margin: 4rem;
+}
+/*
+* =============== MENU ================================================
+* =====================================================================
+*/
+/*botoes do menu*/
+li{
+    display: inline;
+    margin: 20px;
+    font-size: 30px;
+    font-family: monospace;
+}
+/*Interface do menu*/
+ul{
+    text-align: center;
+    margin: auto;
+    background-color: #10053e;
+    padding-top: 10px;
+}
+/*Li a = letras do botão, imagem do botao*/
+li a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px; /* Espaçamento inferior para criar a borda */
+    border-bottom: 2px solid transparent; /* Crie uma borda inferior transparente */
+    transition: border-color 0.3s ease; /* Efeito de transição suave para a borda */
+}
+li a img{   
+    position: relative;
+    top: 7px;
+    padding-left: 5px;
+}
+li a:hover{
+    border-color: white;
+}
+/*Escondendo o menu mobile*/
+.menu-mobile{
+    display: none;
+}
+.botao-mobile{
+    display: none;
+}
+/*
+======================Mudança para modo mobile ou tablet=========================
+=================================================================================
+*/
+@media screen and (max-width: 768px){
+    .box{
+        width: 250px;
+        margin: 20px 70px;
+        
+    }
+    .tech-box{
+        display: grid;
+    }
+    #sobreMim{
+        display: inline-flex;
+        flex-direction: column-reverse;
+        padding-right: 0;
+        align-items: center;
+    }
+    #eufeia{
+        width: 100px;
+    }
+    #sobreMim .abot{
+        padding-top: 0px;
+        padding-right: 50px;
+    }
+    .conteudo p{
+        width: 75%;
+    }
+/*
+====================Menu=============================================================
+=====================================================================================
+*/
+.nav-pc{
+    display: none;
+}
+.menu-mobile ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #3d275f;
+    height: 130px;
+}
+.botao-mobile{
+    display: block;
+    background-color: #10053e;
+    height: 30px;
+    padding: 15px;
+    
+}
+.icon-mobile{
+    width: 40px;
+}
+.botao-mobile button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.open{
+    display: block;
+}
+li{
+    margin: 15px;
+}
+    
+}
