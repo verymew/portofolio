@@ -1,2 +1,0 @@
-# portofolio
-amo ser gaucha
